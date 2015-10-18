@@ -1,0 +1,5 @@
+package com.algaworks.financeiro.repository;
+
+public class Lancamentos {
+
+}

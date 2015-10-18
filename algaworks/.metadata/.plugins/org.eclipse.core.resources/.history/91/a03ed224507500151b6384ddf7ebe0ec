@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<title>Propriedades comuns</title>
+	<script>
+		function alterarValorCampo() {
+			var campo = document.getElementById('meuForm:meuCampo');
+			campo.value = 'Valor alterado';
+		}
+	</script>
+
+	<style>
+.campo {
+	background-color: #ccc;
+	color: white
+}
+</style>
+</h:head>
+<h:body>
+	<h:form id="meuForm">
+		<h:commandButton id="cadastrar1" value="Cadastrar" type="submit"
+			action="#{nomesBean.adicionar}" />
+		<h:commandButton id="limpar" value="Limpar" type="reset" />
+		<!-- 		<h:commandButton id="voltar" value="Voltar" image="/imagens/logo.png" action="oi" /> -->
+
+		<h:commandLink id="cadastrar" value="Cadastrar"
+			action="#{nomesBean.adicionar}" />
+		<h:commandLink id="voltar" action="oi">
+			<h:graphicImage value="/imagens/voltar.png" />
+			<h:outputText value="Voltar" />
+		</h:commandLink>
+	</h:form>
+
+	<h:outputLink value="http://www.algaworks.com" target="_blank">
+		<h:graphicImage library="algaworks" name="logo.png" />
+	</h:outputLink>
+
+	<h:outputLink value="http://www.algaworks.com" target="_blank">
+		<f:param name="codigo" value="931" />
+		<f:param name="grupo" value="Java" />
+		<h:graphicImage library="algaworks" name="logo.png" />
+	</h:outputLink>
+
+	<h:panelGrid columns="2">
+		<f:facet name="header">
+			<h:outputText value="Dados para cadastro" />
+		</f:facet>
+		<h:outputText value="Nome:" />
+		<h:inputText size="20" />
+		<h:outputText value="E-mail:" />
+		<h:inputText size="40" />
+		<h:outputText value="Senha:" />
+		<h:inputSecret size="20" />
+		<h:outputText />
+		<h:commandButton value="Cadastrar" />
+	</h:panelGrid>
+
+
+</h:body>
+</html>

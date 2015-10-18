@@ -1,0 +1,8 @@
+package com.algaworks.financeiro.bean;
+
+public class NomesBean {
+
+	private String nome;
+	private List<String> nomes = new ArrayList<>();
+
+}

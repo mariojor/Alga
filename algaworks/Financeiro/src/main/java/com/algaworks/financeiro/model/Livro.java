@@ -1,0 +1,37 @@
+package com.algaworks.financeiro.model;
+
+import java.io.Serializable;
+
+public class Livro implements Serializable{
+	
+	private static final long serialVersionUID = -5250677593791039993L;
+	
+	private String titulo;
+	private String autor;
+
+	public Livro() {
+	}
+
+	public Livro(String titulo, String autor) {
+		super();
+		this.titulo = titulo;
+		this.autor = autor;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+}

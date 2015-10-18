@@ -1,0 +1,15 @@
+package com.algaworks.financeiro.bean;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NomesBean {
+
+	private String nome;
+	private List<String> nomes = new ArrayList<>();
+
+	public void adicionar() {
+		this.nomes.add(nome);
+	}
+
+}

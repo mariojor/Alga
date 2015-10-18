@@ -1,0 +1,29 @@
+package com.algaworks.financeiro.bean;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+@ViewScoped
+@ManagedBean
+public class CadastroTorcedorBean {
+
+	private String timeFavorito;
+	private String[] timesFavoritos;
+
+	public String[] getTimesFavoritos() {
+		return timesFavoritos;
+	}
+
+	public void setTimesFavoritos(String[] timesFavoritos) {
+		this.timesFavoritos = timesFavoritos;
+	}
+
+	public String getTimeFavorito() {
+		return timeFavorito;
+	}
+
+	public void setTimeFavorito(String timeFavorito) {
+		this.timeFavorito = timeFavorito;
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.algaworks.financeiro.bean;
+
+import java.util.List;
+
+import com.algaworks.financeiro.model.Livro;
+
+public class LivrosBean {
+
+	private List<Livro> livros;
+	
+	
+}
